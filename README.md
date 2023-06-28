@@ -20,3 +20,8 @@ Furthermore, the generation model was exclusively trained using the C key in var
 
 ### generation script
 <img width="939" alt="title_melody" src="https://github.com/clayryu/Irish-title-representation/assets/95623535/7f3b8875-500f-4776-80ce-20d6aa353f73">
+
+### generated Irish folk music
+<audio controls>
+    <source src='model_measure_note_xl_seed_2_key_C minor.wav'>
+</audio>
