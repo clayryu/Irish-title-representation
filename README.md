@@ -10,9 +10,9 @@ I am undertaking this project as part of a class at Sogang University with the g
 
 ## Additional explanation
 ### Generation model
-- Revision
+- Revision  
 Initially, I attempted to develop my own generation model by referring to a research paper on VirtusoTune by Professor Jeong. Unfortunately, my model did not undergo adequate training for satisfactory generation. Due to time constraints, instead of debugging my model, I made the decision to modify and revise the VirtusoTune model itself to suit my specific purpose.
 
 ### Utilizing Representation Vectors from pretrained title embedding model
-- Title Matching
+- Title Matching  
 To address the limitation of title embedding alone in influencing melody generation in VirtusoTune, I generated 180 distinct sets of header embeddings using a pre-trained musical feature embedding model. These embeddings were then matched with a given title embedding obtained from a pre-trained title embedding model. By incorporating a sequential process of generating header information based on the given title embedding, these conditions exerted a greater influence compared to using header embedding alone.
