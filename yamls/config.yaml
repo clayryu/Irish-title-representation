@@ -1,0 +1,34 @@
+defaults:
+  - nn_params: ABC_RNN
+  - pre_trained: measure_note_xl
+  - pre_trained_resize: measure_note_xl_resize
+
+train_params:
+  device: "cuda"
+  batch_size: 630
+  lr: 0.00001
+  loss_margin: 0.1
+  topk: 0 # how many top k to consider for accuracy, consiedering all if 0
+  grad_clip: 1.0
+  num_iter: 30001
+  num_log_per_step: 1
+  num_valid_per_step: 1000
+  step_size: 2000
+  num_sampling: None
+data_params:
+  dataset: "ABCsetTitle_vartune"
+  key_aug: null
+  make_vocab: False
+  vocab_path: "pre_trained/measure_note_xl/vocab.json"
+  score_path: "abc_dataset/folk_rnn_abc_key_cleaned"
+  checkpoint_path: "pre_trained/measure_note_xl/pitch_dur_iter99999_loss0.9795.pt"
+text_embd_params:
+  embd_csv_path: "unq_ttl_emb_6283_melody.csv"
+  model_type: "ST_titleonly_6283"
+general:
+  using_pretrained: True
+  input_feat: "header" # "all" or "all_except_genre" or "header" or "melody_only"
+  query_type: "title"
+  debug: False
+  make_log: False
+  save_dir: "runs/"

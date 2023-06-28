@@ -1,0 +1,19 @@
+vocab_name: NoteMusicTokenVocab
+note_embedder_name: MultiEmbedding
+model_name: MeasureNoteModel
+architecture: "GRU"
+emb:
+  emb_size: 256
+  total_size: -1
+  pitch: 0.75
+  onset: 0.1
+  fermata: 0.1
+  beat_position: 0.2
+  beat_strength: 0.2
+  num_sharp: 0.2
+  is_major: 0.2
+note:
+  hidden_size: 256
+  num_layers: 3
+  dropout: 0.2
+output_keys: ['pitch', 'onset', 'fermata']

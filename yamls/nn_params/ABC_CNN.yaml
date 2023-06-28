@@ -1,0 +1,22 @@
+vocab_name: NoteMusicTokenVocab
+note_embedder_name: MultiEmbedding
+abc_model_name: ABC_CNN_Emb_Model
+ttl_model_name: TTL_Emb_Model
+architecture: "CNN"
+emb:
+abc_model:
+  hidden_size: 144
+  output_size: 256
+abc_conv:
+  dropout: 0.4
+  in_channels: [144, 144, 144, 144, 144, 144, 144]
+  out_channels: [144, 144, 144, 144, 144, 144, 144]
+  kernel_sizes: [3, 3, 3, 3, 3, 3, 3]
+  strides: [1, 1, 1, 1, 1, 1, 1]
+  paddings: [0, 0, 0, 0, 0, 0, 0]
+ttl_model:
+  hidden_size: 256
+  output_size: 256
+  dropout: 0.4
+note:
+output_keys: ['pitch', 'onset', 'fermata']

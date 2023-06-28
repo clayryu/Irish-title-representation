@@ -1,0 +1,42 @@
+nn_params:
+  vocab_name: NoteMusicTokenVocab
+  note_embedder_name: MultiEmbedding
+  model_name: MeasureNoteModel
+  emb:
+    emb_size: 512
+    main: 0.75
+    pitch_class: 0.125
+    octave: 0.125
+    dur: 0.75
+    m_idx: 0.5
+    m_idx_mod4: 0.25
+    m_offset: 0.5
+    is_onbeat: 0.125
+    is_middle_beat: 0.125
+    key: 0.25
+    meter: 0.25
+    unit_length: 0.25
+    rhythm: 0.25
+    root: 0.125
+    mode: 0.125
+    key_sig: 0.125
+    numer: 0.125
+    denom: 0.125
+    is_compound: 0.125
+    is_triple: 0.125
+    total_size: 0
+  note:
+    hidden_size: 512
+    num_layers: 2
+    dropout: 0.2
+  measure:
+    hidden_size: 512
+    num_layers: 2
+    dropout: 0.2
+    num_attention_head: 8
+  final:
+    hidden_size: 512
+    num_layers: 2
+    dropout: 0.2
+data_params:
+  key_aug: null
