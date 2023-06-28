@@ -16,3 +16,7 @@ Initially, I attempted to develop my own generation model by referring to a rese
 ### Utilizing Representation Vectors from pretrained title embedding model
 - Title Matching  
 To address the limitation of title embedding alone in influencing melody generation in VirtusoTune, I generated 180 distinct sets of header embeddings using a pre-trained musical feature embedding model. These embeddings were then matched with a given title embedding obtained from a pre-trained title embedding model. By incorporating a sequential process of generating header information based on the given title embedding, these conditions exerted a greater influence compared to using header embedding alone.
+Furthermore, the generation model was exclusively trained using the C key in various modes. I deliberately manipulated the output key information, which was generated based on the given title, to produce different key variations.
+
+### generation script
+<img width="939" alt="title_melody" src="https://github.com/clayryu/Irish-title-representation/assets/95623535/7f3b8875-500f-4776-80ce-20d6aa353f73">
