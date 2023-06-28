@@ -23,5 +23,5 @@ Furthermore, the generation model was exclusively trained using the C key in var
 
 ### generated Irish folk music
 <audio controls>
-    <source src='model_measure_note_xl_seed_2_key_C minor.wav'>
+    <source src='/model_measure_note_xl_seed_2_key_C minor.wav'>
 </audio>
