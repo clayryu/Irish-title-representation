@@ -1,4 +1,4 @@
-# Irish-title-representation
+# Title Representation with Irish Folk Music
 
 This repository documents my research on uncovering the connection between song titles and their musical features, such as melody, key, genre, rhythm, and more.
 
